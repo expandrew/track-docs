@@ -47,10 +47,18 @@ code {
     font-size: 0.9em;
 }
 
-#navigation li a {
-    padding-left: 10px;
-    padding-right: 10px;
+#navigation .heading {
+    padding: 5px 10px;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    font-weight: 500;
 }
+
+#navigation .heading:hover {
+    cursor: default;
+    background-color: #fff;
+}
+
 
 #navigation .nav-header {
     padding-left: 0;
