@@ -1,6 +1,6 @@
 # Site title and subtitle. This is used in _includes/header.html
 title: 'track-docs'
-subtitle: 'API documentation for expandrew/track'
+subtitle: 'API and project documentation for expandrew/track'
 
 # if you wish to integrate disqus on pages set your shortname here
 disqus_shortname: ''

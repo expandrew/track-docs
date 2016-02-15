@@ -1,18 +1,17 @@
 ---
 layout: default
-title: "Jekyll Docs Template"
+title: "Home"
 ---
 
-### Get Started
+## track-docs
 
-Start by [creating a new post](http://jekyllrb.com/docs/posts/) one of the categories listed in `_config.yml`. It will appear in the navigation on the left once recompiled. Or use the supplied script to make creating pages easier:
+This is the documentation site for the **expandrew/track** project.
+
+### Create a new page
+
+Use the generator below to create new pages:
 
 ```bash
 ruby bin/jekyll-page "Some Page Title" ref
 ```
-
-#### Don't Forget
-
-- Add your own content to this page (i.e. `index.md`) and change the `title`
-- Change `title` and `subtitle` defined in `config.yml` for your site
-- Set the `baseurl` in `_config.yml` for your repo if deploying to GitHub pages
+Page "sections" are defined in the `_config.yml` file.
