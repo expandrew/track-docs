@@ -20,11 +20,9 @@ codeurl: 'https://github.com/expandrew/track'
 
 # Default categories (in order) to appear in the navigation
 sections: [
-    ['doc', 'Documentation'],
-    ['tut', 'Tutorial'],
-    ['ref', 'Reference'],
-    ['dev', 'Developers'],
-    ['post', 'Posts']
+  ['about', 'About'],
+  ['doc', 'Documentation'],
+  ['ref', 'Reference'],
 ]
 
 # Keep as an empty string if served up at the root. If served up at a specific
@@ -43,16 +41,9 @@ future: true
 # Exclude non-site files
 exclude: ['bin', 'README.md']
 
-# Use the redcarpet Markdown renderer
-markdown: redcarpet
-redcarpet:
-    extensions: [
-        'no_intra_emphasis',
-        'fenced_code_blocks',
-        'autolink',
-        'strikethrough',
-        'superscript',
-        'with_toc_data',
-        'tables',
-        'hardwrap'
-    ]
+# Use kramdown extension for Markdown
+markdown: kramdown
+
+kramdown:
+  input: GFM
+
