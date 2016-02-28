@@ -8,12 +8,20 @@ order: 6
 
 ### Deployment
 
-CircleCI watches the `production` branches on `expandrew/track-frontend` and `expandrew/track-api` and triggers a deployment whenever changes are merged in.
+Heroku watches the `production` branches on `expandrew/track-frontend` and `expandrew/track-api` and triggers a deployment whenever changes are merged in.
 
 - Make a pull request from `master` to `production` in either repository 
   - Title the pull request with the date and deployment number for that day (`20160227.1`)
   - enumerate the feature changes in description of the pull request
-- CircleCI detects the merged pull request and will trigger a build, test, and deployment to Heroku according to the `circle.yml` file in the repo
+- Heroku detects the merged pull request and will trigger a build and deployment
+  - Repository/branch configuration lives in the Deploy tab on the app's Heroku Dashboard
+  - Deployment progress is available on the app's Heroku Dashboard under the Activity Feed
+
+#### Notes for me
+
+- *setting up CircleCI to watch the branch and trigger deployment after a successful test is more trouble than it is worth*
+  - when the time comes to set up testing with a CI service, use CircleCI (but don't use it to deploy to Heroku) then turn on Heroku's "Wait for CI to pass before deploy" feature on the Deploy tab in the Automatic Deploys section. 
+  - Don't trigger the deployment from CircleCI (this was a pain in the ass and I spent all weekend trying to get it to work optimally, but I couldn't find a configuration that satisfied me)
 
 ### "Releases"
 
