@@ -26,3 +26,12 @@ Alternatively, you can specify `--recursive` when you clone, and the submodules 
 ~~~bash
 git clone --recursive git@github.com:expandrew/track
 ~~~
+
+### Open the Sublime Project
+
+Ensure you have a [symlink](http://olivierlacan.com/posts/launch-sublime-text-3-from-the-command-line/) set up for Sublime Text 3, then run:
+
+~~~bash
+cd ~/Code/track
+subl track.sublime-project
+~~~
