@@ -17,3 +17,9 @@ mkdir angular && cd $_
 yo gulp-angular
 ~~~
 
+### Run Local Development Server
+
+~~~bash
+cd ~/Code/track/frontend/angular
+gulp serve
+~~~
