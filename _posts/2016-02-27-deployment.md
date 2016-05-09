@@ -14,7 +14,8 @@ Heroku watches the `production` branches on `expandrew/track-frontend` and `expa
   - Title the pull request with the date and deployment number for that day (`20160227.1`)
   - enumerate the feature changes in description of the pull request
 - Heroku detects the merged pull request and will trigger a build and deployment
-  - Heroku detects Node.js and runs `npm install`
+  - **Back End (API)**: Heroku reads `runtime.txt`, `Procfile` and `requirements.txt` and runs through deploy script on successful merge into [`expandrew/track-api/production`](https://github.com/expandrew/track-api/tree/production).
+  - **Front End**: Heroku detects Node.js and runs `npm install`
     - My `package.json` files have [postinstall scripts](https://docs.npmjs.com/misc/scripts) that trigger the build tasks (`bower install && gulp build`) - check out the `scripts: { ... }` sections of each `package.json` file to see what's happening
   - Repository/branch configuration lives in the Deploy tab on the app's Heroku Dashboard
   - Deployment progress is available on the app's Heroku Dashboard under the Activity Feed
