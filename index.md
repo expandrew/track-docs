@@ -5,7 +5,9 @@ title: "Home"
 
 ## track-docs
 
-This is the documentation site for the **expandrew/track** project.
+This is the public documentation site for the [**expandrew/track**](http://github.com/expandrew/track) project.
+
+This page is primarily for my personal use. I am using this site to record the steps I have taken to set up my environment and application, in the case of needing to repeat these steps on other projects in the future.
 
 Check out the [what]({{ site.baseurl }}/about/what.html) page for general project information.
 
