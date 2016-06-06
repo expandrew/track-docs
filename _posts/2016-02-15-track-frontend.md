@@ -8,18 +8,30 @@ order: 1
 
 [**track-frontend**](http://github.com/expandrew/track-frontend) is the front end layer for the **expandrew/track** project.
 
-It is bootstrapped from the Yeoman [gulp-angular generator](https://github.com/Swiip/generator-gulp-angular):
+### Setup
+
+The first iteration is bootstrapped from the Yeoman [gulp-angular generator](https://github.com/Swiip/generator-gulp-angular):
 
 ~~~bash
-npm install -g yo gulp bower
-npm install -g generator-gulp-angular
-mkdir angular && cd $_
-yo gulp-angular
+# pwd is ~/Code/track/frontend
+$ npm install -g yo gulp bower
+$ npm install -g generator-gulp-angular
+$ mkdir angular && cd $_
+$ yo gulp-angular
 ~~~
 
-### Run Local Development Server
+### Local Development
+
+Run the server with the following:
 
 ~~~bash
-cd ~/Code/track/frontend/angular
-gulp serve
+# pwd is ~/Code/track/frontend/angular
+$ gulp serve
 ~~~
+
+### Reference Articles
+
+#### Authentication
+
+- [Where to Store your JWTs – Cookies vs HTML5 Web Storage](https://stormpath.com/blog/where-to-store-your-jwts-cookies-vs-html5-web-storage)
+- [Opinionated AngularJS - Techniques for authentication in AngularJS applications](https://medium.com/opinionated-angularjs/techniques-for-authentication-in-angularjs-applications-7bbf0346acec#.j42u7pss8)
