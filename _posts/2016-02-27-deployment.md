@@ -12,6 +12,6 @@ TODO: shell script/gulp script that pushes the files to the right buckets online
 
 Edited for brevity. Old configuration available in commit: 
 
-[(Update Commit Hash)](https://github.com/expandrew/track-docs/commit/d4f4b32d28ded69b326dfceee793ac6cbf1d47b9)
+`[cd33727](https://github.com/expandrew/track-docs/commit/cd337276b07efdbad3233435a7df725717a2bb4c)`
 
 
